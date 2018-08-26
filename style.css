@@ -1,0 +1,46 @@
+body {
+	margin: 1em;
+	/*background:	radial-gradient(yellow, orange);*/
+}
+				/*Weather App Data Style*/
+.input-group {
+	margin: 20px auto;
+	max-width: 600px;
+}
+.weatherContainer {
+	border: 1px solid black;
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+.container {
+	text-align: center;
+}
+.cityName {
+	font-size: 5.5em;
+}
+.temp {
+	font-size: 3em;
+}
+.dis {
+	font-size: 4em;
+}
+.tempRange {
+	font-size: 3em;
+}
+.dateRise,
+.timeRise,
+.dateSet,
+.timeSet {
+	font-size: 2em;
+}
+.sunTime {
+	display: inline-block;
+	border:1px solid black;
+	padding: 10px;
+	margin: 10px;
+	width: 400px;
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}

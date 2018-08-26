@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<!-- TITLE -->
+	<title>Weather App</title>
+				<!-- META TAG -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<!-- CSS STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+				<!-- JAVA-SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+				<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body onload="startup()">
+				<!-- ALL DATA CONTAINER -->
+	<div class="container">
+				<!-- THEME BUTTON -->
+	<button type="button" class="btn btn-light" onclick="light()" style="width: 300px;">Light</button>
+	<button type="button" class="btn btn-dark" onclick="dark()" style="width: 300px;">Dark</button>
+				<!-- INPUT FIELD -->
+	<form id="nameform" method="get">
+		<div class="input-group mb-3">
+	  		<input type="text" class="form-control" placeholder="Enter City Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	  		<div class="input-group-append">
+	</form>
+	    		<span class="btn btn-secondary" form="nameform" id="basic-addon2" onclick="btnSearch()">
+	    			<i class="fas fa-search"></i>
+	    		</span>
+			</div>
+		</div>
+				<!-- WEATHER Code -->
+		<div class="weatherContainer">
+			<h1 class="cityName"></h1>
+			<h2 class="temp"></h2>
+			<p class="dis"></p>
+			<p class="tempRange">
+				<span class="min"></span>
+				<span class="max"></span>
+			</p>
+			<div class="sunTime">
+				<h1>Sunrise</h1>
+				<p class="dateRise"></p>
+				<p class="timeRise"></p>
+			</div>
+			<div class="sunTime">
+				<h1>sunset</h1>
+				<p class="dateSet"></p>
+				<p class="timeSet"></p>
+			</div>
+		</div>
+	</div>				
+</body>
+</html>

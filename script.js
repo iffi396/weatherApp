@@ -2,7 +2,7 @@
 function startup(){
 	$.ajax({
 				// api Link
-	url: `http://api.openweathermap.org/data/2.5/weather?q=karachi&appid=95d9d3a5000b4fbba32450cff464b5d7&units=metric`,
+	url: `https://api.openweathermap.org/data/2.5/weather?q=karachi&appid=95d9d3a5000b4fbba32450cff464b5d7&units=metric`,
 				// When It Will Run Successfully
 	success: function(data) {
 		console.log(data)

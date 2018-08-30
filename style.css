@@ -1,6 +1,7 @@
 body {
 	margin: 1em;
-	/*background:	radial-gradient(yellow, orange);*/
+	background-image: radial-gradient(black, gray);
+	color: white !important;
 }
 				/*Weather App Data Style*/
 .input-group {

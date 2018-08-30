@@ -19,16 +19,12 @@
 <body onload="startup()">
 				<!-- ALL DATA CONTAINER -->
 	<div class="container">
-				<!-- THEME BUTTON -->
-	<button type="button" class="btn btn-light" onclick="light()" style="width: 300px;">Light</button>
-	<button type="button" class="btn btn-dark" onclick="dark()" style="width: 300px;">Dark</button>
 				<!-- INPUT FIELD -->
-	<form id="nameform" method="get">
 		<div class="input-group mb-3">
-	  		<input type="text" class="form-control" placeholder="Enter City Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	  		<input type="text" class="form-control" placeholder="Enter City Here" aria-label="Recipient's username" aria-describedby="basic-addon2" onkeydown = "if (event.keyCode == 13)
+      document.getElementById('search-btn').click()">
 	  		<div class="input-group-append">
-	</form>
-	    		<span class="btn btn-secondary" form="nameform" id="basic-addon2" onclick="btnSearch()">
+	    		<span class="btn btn-secondary" id="search-btn" onclick="btnSearch()">
 	    			<i class="fas fa-search"></i>
 	    		</span>
 			</div>

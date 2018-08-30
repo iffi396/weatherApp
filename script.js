@@ -1,12 +1,3 @@
-				// Theme Buttons
-function light(){
-	document.querySelector("body").style.background = `radial-gradient(yellow, orange)`;
-	document.querySelector("body").style.color = `black`;
-}
-function dark(){
-	document.querySelector("body").style.background = `radial-gradient(black, gray)`;
-	document.querySelector("body").style.color = `white`;
-}
 				// Onload Code
 function startup(){
 	$.ajax({

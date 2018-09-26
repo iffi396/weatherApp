@@ -17,11 +17,16 @@ body {
 .container {
 	text-align: center;
 }
-.cityName {
+.cityName,
+.heading {
+	text-align: center;
 	font-size: 5.5em;
 }
 .temp {
 	font-size: 3em;
+}
+.icon {
+	font-size: 100px;
 }
 .dis {
 	font-size: 4em;
@@ -40,7 +45,7 @@ body {
 	border:1px solid black;
 	padding: 10px;
 	margin: 10px;
-	width: 400px;
+	width: 80%;
 	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);

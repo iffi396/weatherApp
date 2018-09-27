@@ -6,6 +6,7 @@ function startup(){
 				// When It Will Run Successfully
 	success: function(data) {
 				// Data Input Info
+		console.log(data)
 		document.querySelector(".cityName").innerHTML = data.name;
 		document.querySelector(".temp").innerHTML = `${data.main.temp}℃`;
 		document.querySelector(".dis").innerHTML = data.weather[0].main;

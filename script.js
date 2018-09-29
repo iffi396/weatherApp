@@ -22,7 +22,22 @@ function startup(){
 		document.querySelector(".timeSet").innerHTML = setTime;
 			// Icon
 	let weatherName = data.weather[0].main;
+	 let calcTime = new Date();
+       let sunriseTime = new Date(data.sys.sunrise * 1000);
+       let sunsetTime = new Date(data.sys.sunset * 1000);
 
+       if (calcTime > sunriseTime && calcTime < sunsetTime) {
+         document.querySelector("body").style["background-image"] = `url(day.jpg)`;
+         document.querySelector("body").style["background-position"] = `bottom`;
+         document.querySelector("body").style["background-attachment"] = `fixed`;
+         document.querySelector("body").style.color = `black`;
+
+     } else {
+        document.querySelector("body").style["background-image"] = `url(night.jpg)`;
+        document.querySelector("body").style["background-position"] = `bottom`;
+        document.querySelector("body").style["background-attachment"] = `fixed`;
+        document.querySelector("body").style.color = `white`;
+    }
     switch (weatherName) {
         case "Clouds":
         document.querySelector(".icon").innerHTML = `<i class="wi wi-cloud"></i>`;
@@ -86,22 +101,7 @@ function startup(){
         break;
 
     }
-    let calcTime = new Date();
-       let sunriseTime = new Date(data.sys.sunrise * 1000);
-       let sunsetTime = new Date(data.sys.sunset * 1000);
-
-       if (calcTime > sunriseTime && calcTime < sunsetTime) {
-         document.querySelector("body").style["background-image"] = `url(day.jpg)`;
-         document.querySelector("body").style["background-position"] = `bottom`;
-         document.querySelector("body").style["background-attachment"] = `fixed`;
-         document.querySelector("body").style.color = `black`;
-
-     } else {
-        document.querySelector("body").style["background-image"] = `url(night.jpg)`;
-        document.querySelector("body").style["background-position"] = `bottom`;
-        document.querySelector("body").style["background-attachment"] = `fixed`;
-        document.querySelector("body").style.color = `white`;
-    }
+   
 
 },	
 				// If It Will Not Run
